@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.musicPlayer {
+    background: rgb(7,8,8);
+    background: linear-gradient(142deg, rgba(7,8,8,1) 0%, rgba(3,37,5,1) 100%);
+    width: 40rem;
+    padding: 2.5rem 3.5rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    background: #333;
+    color: hsl(142, 92%, 54%);
+    box-shadow: 0 .5rem 1rem rgba(26, 255, 114, 0.22), inset 1px 1px rgb(155, 253, 181);
+}
+
+.songImg {
+    width: 22rem;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 1rem 6rem rgba(26, 255, 30, 0.22);
+}
+
+.musicPlayer h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.musicPlayer p {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+#progressBar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1rem;
+    background: rgb(30, 87, 26);
+    border-radius: .4rem;
+    cursor: pointer;
+    margin: 4rem 0;
+    box-shadow: inset 1px 1px 3px #fff;
+}
+
+#progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #55f531;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: .8rem solid #fff;
+    box-shadow: 0 .5rem .5rem rgba(250, 185, 185, 0.22);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div {
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #55f531;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgba(255, 26, 26, .22);
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #55f531;
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player thing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1fa94f2f1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="musicPlayer">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="images/enterSandman.jpg" class="songImg" />
+        <h1>Enter Sandman</h1>
+        <p>METALLICA</p>
+
+        <audio id="song">
+          <source
+            src="Media/Metallica_ Enter Sandman (Official Music Video).mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progressBar" />
+
+        <div class="controls">
+          <div>
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div id="playPause">
+            <i class="fa-solid fa-play" id="controlIcon"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
